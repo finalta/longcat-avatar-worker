@@ -1,0 +1,12 @@
+{
+  "input": {
+    "person_count": "single",
+    "stage": "ai2v",
+    "resolution": "480p",
+    "num_segments": 1,
+    "num_inference_steps": 8,
+    "prompt": "A doctor speaking naturally, professional setting, realistic, high quality",
+    "image_url": "https://example.com/doctor_reference.jpg",
+    "wav_url": "https://example.com/tts_audio.wav"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "input": {
+    "person_count": "single",
+    "stage": "at2v",
+    "resolution": "480p",
+    "num_segments": 1,
+    "num_inference_steps": 8,
+    "prompt": "A professional woman in her 40s speaking confidently, medical setting, realistic",
+    "wav_url": "https://example.com/tts_audio.wav"
+  }
+}

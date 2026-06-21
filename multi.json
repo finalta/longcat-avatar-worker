@@ -1,0 +1,18 @@
+{
+  "input": {
+    "person_count": "multi",
+    "stage": "ai2v",
+    "resolution": "480p",
+    "num_segments": 1,
+    "num_inference_steps": 8,
+    "audio_type": "para",
+    "prompt": "Two people having a professional conversation, realistic, high quality",
+    "image_url": "https://example.com/two_people.jpg",
+    "wav_url": "https://example.com/person1_audio.wav",
+    "wav_url_2": "https://example.com/person2_audio.wav",
+    "bbox": {
+      "person1": [50, 30, 400, 300],
+      "person2": [50, 350, 400, 620]
+    }
+  }
+}
