@@ -47,7 +47,10 @@ WORKDIR /LongCat-Video
 RUN pip install --no-cache-dir -r requirements.txt
 
 # ── LongCat avatar requirements ────────────────────────────────────────────
-RUN pip install --no-cache-dir -r requirements_avatar.txt
+# libsndfile1 and tritonserverclient are not PyPI packages (libsndfile1 comes
+# from apt above, Triton is unused by the avatar scripts), so drop them first.
+RUN sed -i -E '/^(libsndfile1|tritonserverclient)==/d' requirements_avatar.txt && \
+    pip install --no-cache-dir -r requirements_avatar.txt
 
 # ── librosa via pip (no conda in Docker) ──────────────────────────────────
 RUN pip install --no-cache-dir librosa soundfile
